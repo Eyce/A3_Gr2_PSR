@@ -9,14 +9,31 @@
 namespace OKLM\StringGenerator;
 
 
+/**
+ * Class TextGenerator
+ * @package OKLM\StringGenerator
+ */
 class TextGenerator {
 
+    /**
+     * @var string
+     */
     private static $wordLibrary = "Lorem ipsum Nullam maximus leo urna a fermentum neque fringilla quis Maecenas eu ligula sit amet risus posuere porttitor ut in dui Aenean sed erat nec enim ornare rhoncus ut ut elit Proin varius lobortis eros a dignissim orci lobortis vitae Nam euismod sagittis risus id ultrices Ut ut orci ex Phasellus sem dui auctor eget ligula ac vestibulum dictum arcu Donec ac maximus diam ac maximus ante dolor sit amet consectetur adipiscing elit. Praesent posuere interdum nisi a pellentesque";
 
+    /**
+     * Constructor
+     */
     public function __construct()
     {
 
     }
+
+    /**
+     * @param int $wordsNumber
+     * @param int $paragraphNumber
+     *
+     * @return string
+     */
     public static function generate($wordsNumber = 120, $paragraphNumber = 5)
     {
         $wordArray =explode(' ',self::$wordLibrary);

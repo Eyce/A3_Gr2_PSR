@@ -15,40 +15,27 @@ class PasswordGenerator
      * @var string
      */
     private static $password_strength_easy = 'azertyuiopqsdfghjklmwxcvbn';
+
     /**
      * @var string
      */
     private static $password_strength_medium = 'AZERTYUIOPQSDFGHJKLMWXCVBN1234567890';
+
     /**
      * @var string
      */
     private static $password_strength_hard = '$£€&#@%!§?+~^-_*éè';
 
-
-
-    /**
-     * Generate a weak password
-     */
-    const PASSWORD_EASY = 1;
-    /**
-     * Generate a normal password
-     */
-    const PASSWORD_MEDIUM = 2;
-    /**
-     * Generate a strong password
-     */
-    const PASSWORD_HARD = 3;
-
-
+    const PASSWORD_EASY     = 1;
+    const PASSWORD_MEDIUM   = 2;
+    const PASSWORD_HARD     = 3;
 
     /**
-     *
+     * Constructor
      */
     public function __construct()
     {
     }
-
-
 
     /**
      * @param int $length
@@ -70,8 +57,6 @@ class PasswordGenerator
             throw new \Exception("Invalid password strength !");
         }
 
-
-
         switch ($strength)
         {
             case self::PASSWORD_EASY:
@@ -84,8 +69,6 @@ class PasswordGenerator
                 $char .= self::$password_strength_easy . self::$password_strength_medium . self::$password_strength_hard;
                 break;
         }
-
-
 
         $generatedPassword = '';
 
