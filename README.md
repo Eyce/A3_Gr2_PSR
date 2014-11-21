@@ -23,3 +23,7 @@ require __DIR__.'/vendor/autoload.php';
 
 echo \OKLM\StringGenerator\TextGenerator::generate(120,5);
 ```
+
+##Requirements
+
+*PHP 5.4
