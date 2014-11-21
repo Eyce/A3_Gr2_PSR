@@ -1,5 +1,7 @@
 # StringGenerator  
 
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/Eyce/A3_Gr2_PSR/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/Eyce/A3_Gr2_PSR/?branch=master)  
+
 This library can generate strings like passwords or replacement text.
 
 ## Password  
