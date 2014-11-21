@@ -24,6 +24,15 @@ require __DIR__.'/vendor/autoload.php';
 echo \OKLM\StringGenerator\TextGenerator::generate(120,5);
 ```
 
-##Requirements
+##Minimal Requirements
 
-*PHP 5.4
+*   PHP 5.4
+
+##Dependencies
+
+*   Slugify
+*   PhpUnit
+*   Doctrine
+*   Sebastian
+*   Symfony
+*   Composer
